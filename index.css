@@ -98,11 +98,32 @@ section {
 }
 
 /*resposividade da pagina */
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 760px) {
+
     .title-first {
         flex-direction: column;
     }
   
+    .content {
+        display: block;
+        flex-direction: column;
+    }
+   .title-first {
+    flex-direction: column;
+   }
+   .navigation {
+    position: absolute;
+    top: 875px;
     
+    
+
+    
+    
+   }
+ 
+
+
+
+   
     }
     

@@ -4,6 +4,7 @@
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+   
 }
 
 .content .slide img {
@@ -16,11 +17,13 @@
     width: 100%;
 }
 
+
 .navigation {
     position: absolute;
     bottom: 10px;
-    left: 900px;
+    /*left: 900px; */
     display: flex;
+    
 }
 
 .bar {
