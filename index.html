@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="envelope.css">
 </head>
 <body>
 
@@ -14,8 +15,7 @@
             <img class="img-logo" src="./assest/IMG/Logo.png" alt="Logo">
         </div>
         <nav>
-           <h1>Meus Fans
-           </h1>
+           <h1 class="logo" > Meus Fans</h1>
         </nav>
 
     </header>
@@ -23,7 +23,11 @@
     <main>
         
         <section class="first-section">
-            <h1>Sejam bem-vindo <br> conheça agora os fãs do <strong>Henrique</strong></h1>
+            <div class="title-first">
+                <h1 class="text-one" >Sejam bem-vindo!</h1>
+                <p class="title-one"><br> conheça agora os fãs do <strong>Henrique!</strong></p>
+            
+            </div>
 
             <div class="content">
 
@@ -34,51 +38,90 @@
                     <input class="input" type="radio" name="slide" id="slide3">
                     <input class="input" type="radio" name="slide" id="slide4">
                     <input class="input" type="radio" name="slide" id="slide5">
-    
-                <div class="slide s1">
-                    <img class="main-png" src="./assest/IMG/1.jpeg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="main-png" src="./assest/IMG/4.jpeg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="main-png" src="./assest/IMG/3.jpeg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="main-png" src="./assest/IMG/2.jpeg" alt="">
-                </div>
-                <div class="slide">
-                    <img class="main-png" src="./assets/1.jpeg" alt="">
+        
+        
+                    <div class="slide s1">
+                        <img src="./assest/IMG/1.jpeg" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./assest/IMG/4.jpeg" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./assest/IMG/2.jpeg" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <img src="./assest/IMG/3.jpeg" alt="">
+                    </div>
+        
+                    <div class="slide">
+                        <video src="./assest/IMG/micro-ondas.mp4" alt=""
+                        controls
+                        autoplay
+                        
+                        >
+                    </div>
                 </div>
             </div>
-        </div>
-    
-        <div class="navigation">
-    
-            <label class="bar" for="slide1"></label>
-            <label class="bar" for="slide2"></label>
-            <label class="bar" for="slide3"></label>
-            <label class="bar" for="slide4"></label>
-            <label class="bar" for="slide5"></label>
-    
-        </div>
-    
-
-
-           
-
+        
+            <div class="navigation">
+        
+                <label class="bar" for="slide1"></label>
+                <label class="bar" for="slide2"></label>
+                <label class="bar" for="slide3"></label>
+                <label class="bar" for="slide4"></label>
+                <label class="bar" for="slide5"></label>
+        
             </div>
-
-
+            </div>
         </section>
 
-
-
+        <!--final da primeira section-->
         
+        <section class="segunda-section">
+            <div class="title-two">
+
+                <h1 class="text-two">Henrique!</h1>
+                <p class="paragrafo">Como de praxe demostrar uma capacidade além do normal,
+                    <br> obtendo diversos discípulo e fans.
+                    <br>  &nbsp;Por Exemplo:</p>
+
+               
+            </div>
 
 
+            <div class="container-enveloper">
+                <div class="envelope-wrapper">
+                    <div class="envelope">
+                        <div class="letter">
+                            <div class="text">
+                                <strong>Fans do Henrique.</strong>
+                                <p>Mileny Pintinha;
+                                <br>Bia Molambo;
+                                <br> Jurema vulgo micro-ondas;
+                                <br> André vgbd;
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="heart"></div>
+        </section>
+ 
     </main>
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+
+
+
+    <script src="./script.js"></script>
     
 </body>
 </html>

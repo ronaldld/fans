@@ -1,12 +1,17 @@
 .content {
     height: 520px;
-    width: 600px;
+    width: 590px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
 .content .slide img {
+    height: 100%;
+    width: 100%;
+
+}
+.content .slide video {
     height: 100%;
     width: 100%;
 }
@@ -27,6 +32,7 @@
     border-radius: 15px;
     cursor: pointer;
     transform: .5s ease;
+    flex-wrap: wrap;
 
 }
 
